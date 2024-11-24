@@ -1,0 +1,209 @@
+/* Start Main Rules */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+:root {
+  --main-color: #0b0d17;
+  --secend-color: #d2d8f9;
+  --hover-color: #85868b;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --main-font: "Barlow Condensed", sans-serif;
+  --secend-font: "Bellefair", serifs;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+   min-height: 100vh;
+   background-image: url('../assets/technology/background-technology-mobile.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: var(--secend-color);
+   position: relative;
+   font-family: var(--main-font);
+   overflow-x: hidden;
+}
+
+/* style for the rest part of the page */
+.technology-main-containt-container{
+   text-align: center;
+   margin-top: 50px;
+   /* transform: translateY(50px); */
+}
+.technology-lounch-101{
+   font-size: 1.3rem;
+   font-weight: 400;
+   word-spacing: 7px;
+   letter-spacing: 3px;
+   color: white;
+   margin-bottom: 70px;
+}
+.gray-text-color{
+   color: #85868b;
+}
+/* .technology-img-text-container{
+    border: 2px solid red; 
+}
+ */
+.technology-img-text-container img{
+   width: 100%;
+   object-fit: contain;
+}
+/* style for the circle btn */
+.circle-btns-container{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 20px;
+   margin-bottom: 50px;
+}
+
+.circle-btns-container div{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid  var(--hover-color);
+   cursor: pointer;
+   transition: background-color 0.4s;
+}
+
+.circle-btns-container div:hover{
+   background-color: #fff;
+   color: #0b0d17;
+   border-color:#FFF ;
+}
+div.activ-btn{
+  /* TODO  solved */
+   background-color: #fff;
+   color: #0b0d17;
+   border:2px solid #fff ;
+}
+/* the text content of the body */
+.text1{
+   font-size: 1.2rem;
+   padding: 10px;
+}
+.text2{
+   font-family: var(--secend-font);
+   text-transform: uppercase;
+   color: #fff;
+   margin-bottom: 20px;
+   padding: 10px;
+   font-weight: 500;
+   font-size: 1.6rem;
+   word-spacing: 5px;
+}
+.dicription{
+   text-align: center;
+   width:90%;
+   margin: 0 auto;
+   line-height: 30px;
+}
+.text3{
+   font-size: 1.2rem;
+   padding: 20px 0;
+}
+/* style for the tablet mode */
+@media (min-width:577px)and (max-width:768px){
+ /*style for the rest part of the page */
+   body{
+      background-image: url(../assets/technology/background-technology-tablet.jpg);
+      padding: 20px;
+   }
+   .technology-main-containt-container{
+      text-align: left;
+      /* border: 3px solid yellow; */
+   }
+   .technology-lounch-101{
+      font-size: 1.6rem;
+      font-weight: 100;
+   }
+   .circle-btns-container div{
+      margin-top: 55px;
+      width: 80px;
+      height: 80px;
+      font-size: 1.3rem;
+      font-weight: 500;
+   }
+   .text1{
+      font-size: 1.7rem;
+   }
+   .text2{
+      font-size: 3.3rem;
+      padding: 20px;
+      white-space: nowrap;
+      text-align: center;
+      word-spacing: 2px;
+   }
+   .dicription{
+      width: 70%;
+      /* border: 2px solid white;} */
+}
+.text3{
+   font-size: 1.3rem;
+   font-family: var(--secend-font);
+   }
+}
+/* style for the desctop mode */
+@media (min-width: 769px){
+   body{
+      background-image: url(../assets/technology/background-technology-desktop.jpg);
+   }
+   /* for other part  */
+   .technology-main-containt-container{
+      text-align: left;
+      padding: 20px;
+   }
+   .technology-lounch-101{
+      font-size: 2rem;
+   }
+   .technology-img-text-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 500px;
+      gap: 100px;
+
+   }
+   .technology-img-text-container img{
+      height: 100%;
+      object-fit: cover;
+      grid-area: 1/2/2/3; 
+      /* width: 500px; */
+      width: 100%;
+   }
+   
+   .technology-text-content{
+      display: flex;
+      grid-area: 1/1/2/2;
+   }
+   .circle-btns-container{
+      /* border: 2px solid white; */
+      width: 25%;
+      height: 70%;
+      flex-direction: column;
+   }
+   .circle-btns-container div{
+      width: 90px;
+      height: 90px;
+      font-size: 2rem;
+   }
+   .dicription{
+      text-align: left;
+      margin-top: 50px;
+      /* transform: translateY(50px); */
+   }
+   .text2{
+      font-size:2rem;
+      white-space: nowrap;
+      letter-spacing: 1px;
+      word-spacing: 2px;
+   }
+
+}

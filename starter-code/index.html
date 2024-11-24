@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <!-- links for the style sheet -->
+    <link rel="stylesheet" href="./css/home-style.css" />
+    <link rel="stylesheet" href="./css/nav-bar.css" />
+  </head>
+  <body>
+    <!-- hrading part or the navigation -->
+    <!-- container for the logo and  navigation -->
+    <header class="navigation-logo-container">
+      <img src="./assets/shared/logo.svg" class="logo" />
+      <div class="horizontal-line"></div>
+      <img
+        src="./assets/shared/icon-hamburger.svg"
+        alt=""
+        class="open-menu"
+        id="js-open-menu"
+      />
+      <!-- TODO add menu button -->
+      <nav class="links-container active-nav" id="js-nav-container">
+        <img
+          src="./assets/shared/icon-close.svg"
+          alt=""
+          class="close-menu"
+          id="js-close-menu"
+        />
+        <ul class="link-list-container">
+          <li class="link-nav"><a href="./index.html">Home</a></li>
+          <li class="link-nav">
+            <a href="./destination-moon.html">Destination</a>
+          </li>
+          <li class="link-nav"><a href="./crew-commander.html">Crew</a></li>
+          <li class="link-nav">
+            <a href="./technology-capsule.html">Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- the rest code -->
+    <!-- this is the container for both the text section and the img section -->
+    <section class="main-container">
+      <!-- container for all the text found in the home page -->
+      <section class="home-text-container">
+        <h1 class="home-heading">
+          So, you want to travel to
+          <br />
+          <span class="bold-heading-pt"> SPACE </span>
+        </h1>
+        <p class="heading-text-discription">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience! Explore
+        </p>
+      </section>
+      <!-- this section is the container for the img  -->
+      <div class="home-img-container">
+        <div class="circl-link-box">
+          <a href="#">Explore</a>
+        </div>
+        <div class="shadow-box"></div>
+      </div>
+    </section>
+    <script src="./script/nav.js"></script>
+  </body>
+</html>

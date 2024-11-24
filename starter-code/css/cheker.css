@@ -1,0 +1,101 @@
+/* Start Main Rules */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+:root {
+  --main-color: #0b0d17;
+  --secend-color: #d2d8f9;
+  --hover-color: #85868b;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --main-font: "Barlow Condensed", sans-serif;
+  --secend-font: "Bellefair", serifs;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+   min-height: 100vh;
+   background-image: url(../assets/crew/background-crew-mobile.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   color: var(--secend-color);
+   font-family: var(--main-font);
+   /* overflow-x: hidden; */
+
+}
+
+/* other part of the code  */
+/* this code is for test */
+.sampleheader{
+   border: 2px solid red;
+   width: 100%;
+   height: 100px;
+}
+.main-content-container{
+   text-align: center;
+   padding: 30px;
+}
+.top-text{
+   font-size: 1.2rem;
+   word-spacing: 4px;
+   color: #fff;
+}
+.gray-text{
+   color: var(--secend-color);
+   margin-right: 15px;
+}
+.img-container{
+   border: 2px solid yellow;
+   width: 300px;
+   max-height: 400px;
+   margin: 0 auto;
+   margin-top: 30px;
+   overflow: hidden;
+}
+.img-container img{
+   width: 100%;
+   object-fit: cover;
+}
+.circle-btn-container{
+   border: 2px solid red;
+   transform: translateY(20px);
+   
+}
+.circle-btn-container span{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-color: #333;
+   border-radius: 50%;
+   margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.circle-btn-container span:hover{
+   background-color: #fff;
+}
+ .circle-btn-container .activ-circle{
+   background-color: white;
+}
+.roal{
+   font-size: 1.2rem;
+   color:#fff;
+   font-family: var(--secend-font);
+   text-transform: uppercase;
+   padding: 10px;
+
+}
+.crew-name{
+   font-size: 2.5rem;
+   font-family: var(--secend-font);
+   font-weight: 500;
+   padding: 10px;
+   color: #fff;
+}
+.crew-dscription-name-roal-container{
+   border: 2px solid gold;
+   transform: translateY(50px);
+   padding: 10px 50px ;
+}

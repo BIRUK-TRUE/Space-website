@@ -1,0 +1,196 @@
+/* Start Main Rules */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+:root {
+  --main-color: #0b0d17;
+  --secend-color: #d2d8f9;
+  --hover-color: #85868b;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --main-font: "Barlow Condensed", sans-serif;
+  --secend-font: "Bellefair", serifs;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+   min-height: 110vh;
+   background-image: url(../assets/crew/background-crew-mobile.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   color: var(--secend-color);
+   font-family: var(--main-font);
+   overflow-x: hidden;
+
+}
+.main-content-container{
+   text-align: center;
+   padding: 30px;
+}
+.top-text{
+   font-size: 1.3rem;
+   word-spacing: 4px;
+   color: #fff;
+}
+.gray-text{
+   color: var(--secend-color);
+   margin-right: 15px;
+}
+.img-container{
+   /* border: 2px solid yellow; */
+   width: 300px;
+   height: 400px;
+   margin: 0 auto;
+   margin-top: 30px;
+   overflow: hidden;
+}
+.img-container img{
+   width: 100%;
+   object-fit: cover;
+}
+.circle-btn-container{
+   margin-top: 20px;
+}
+.circle-btn-container span{
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background-color: gray;
+   border-radius: 50%;
+   margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.circle-btn-container span:hover{
+   background-color: #fff;
+}
+ .circle-btn-container .activ-circle{
+   background-color: white;
+}
+.roal{
+   font-size: 1.3rem;
+   color:#fff;
+   font-family: var(--secend-font);
+   text-transform: uppercase;
+   padding: 10px;
+
+}
+.crew-name{
+   font-size: 2.5rem;
+   font-family: var(--secend-font);
+   font-weight: 500;
+   padding: 10px;
+   color: #fff;
+}
+.crew-dscription-name-roal-container{
+   margin-top: 50px;
+   font-size: 1.2rem;
+   padding: 10px 50px ;
+   line-height: 30px;
+}
+/* style for the tablet mode */
+@media (min-width:568px) and (max-width:768px){
+
+   body{
+      background-image: url(../assets/crew/background-crew-tablet.jpg);
+      /* overflow: hidden; */
+      padding: 20px; 
+   }
+   /* other part of code */
+   .img-container{
+      /* border: 2px solid green; */
+      width: 400px;
+      max-height: 400px;
+      margin-top: 0;
+      padding: 80px;
+
+      /* display: none; */
+      position: absolute;
+      bottom: -70px;
+      margin-top:100px;
+      /* transform: translateY(170px); */
+      padding: 50px;
+   }
+   .circle-btn-container{
+      position: absolute;
+      bottom: -120px;
+      padding-bottom:10px;
+      /* transform: translateY(-300px); */
+      margin-top: 390px;
+      /* border: 2px solid blue; */
+   }
+   .main-content-container{
+      text-align: left;
+   }
+   .crew-dscription-name-roal-container{
+      width: 80%;
+      height: 50%;
+      /* border: 2px solid red; */
+
+   }
+   .top-text{
+      font-size: 1.5rem;
+   }
+   .roal{
+      font-size: 1.5rem;
+      padding: 5px;
+   }
+   .img-container{
+      margin-top: 10px;
+   }
+
+}
+
+/* style for the descktop mode */
+@media(min-width:769px){
+   body{
+      background-image: url(../assets/crew/background-crew-desktop.jpg);
+      /* overflow-y: hidden; */
+      min-height: 100vh;
+   }
+   /* other part of the code */
+   .main-content-container{
+      text-align: left;
+   }
+   .grid-contener{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 100px 100px 100px  100px 100px;
+     column-gap: 50px;
+   }
+   .img-container{
+      grid-area: 1/2/7/3;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      padding: 0;
+      margin: 0;
+   }
+   .img-container img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      /* transform: translateX(200px); */
+   }
+
+   .crew-dscription-name-roal-container{
+      grid-area: 1/1/6/2;
+      width: 90%;
+   }
+   .circle-btn-container{
+      z-index: 90;
+      grid-area:5/1/5/2;
+      transform: translateY(-70px);
+   }
+   .crew-dscription{
+      font-size: 1.4rem;
+      line-height: 30px;
+   }
+   .crew-name{
+      font-size: 3.5rem;
+   }
+
+}

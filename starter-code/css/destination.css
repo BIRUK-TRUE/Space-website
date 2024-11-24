@@ -1,0 +1,186 @@
+/* Start Main Rules */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+:root {
+  --main-color: #0b0d17;
+  --secend-color: #d2d8f9;
+  --hover-color: #85868b;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --main-font: "Barlow Condensed", sans-serif;
+  --secend-font: "Bellefair", serifs;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+   min-height: 100vh;
+   background-image: url(../assets/destination/background-destination-mobile.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: white;
+   font-family: var(--main-font);
+   overflow-x: hidden;
+}
+
+/* code for other part */
+.main-content-container{
+   /* border: 2px solid white; */
+   text-align: center;
+   padding: 20px;
+}
+.top-text{
+   font-size: 1.3rem;
+   padding: 10px 0 50px 0;
+   word-spacing: 5px;
+}
+.top-text span{
+   color: var(--hover-color);
+   margin-right: 16px;
+}
+.img-container img{
+   width: 250px;
+   height: 250px;
+   /* border: 2px solid pink; */
+}
+.planet-list{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   cursor: pointer;
+   font-size: 1.1rem;
+   
+}
+.planet-list li{
+   position: relative;
+   /* border: 2px solid blue; */
+   padding: 6px;
+   margin-top: 10px;
+}
+
+.planet-list li span::after{
+content: "";
+width: 0;
+height: 3px;
+background-color: var(--hover-color);
+display: block;
+border-radius: 2px;
+position: absolute;
+right: 0;
+z-index: -2;
+transition: width 0.5s;
+}
+.planet-list li:hover span::after{
+   width: 100%;
+   /* left: 0; */
+}
+.planet-name-heading{
+   font-size: 4rem;
+   font-family: var(--secend-font);
+   padding: 20px;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+.planet-discription{
+   /* border: 2px solid red; */
+   width: 70%;
+   margin: 0 auto;
+   text-align: center;
+   line-height: 30px;
+   color: var(--secend-color);
+   font-size: 1.2rem;
+}
+
+.text-info{
+   color: var(--secend-color);
+   font-size: 1.3rem;
+   padding: 10px;
+}
+.number-info{
+   font-size: 3rem;
+   font-family: var(--secend-font);
+}
+.active-link::after{
+content: "";
+width: 100%;
+height: 3px;
+background-color: white;
+display: block;
+border-radius: 2px;
+position: absolute;
+right: 0;
+left: 0;
+z-index: 2;
+}
+/* style for the tablet mode */
+@media(min-width:577px){
+   body{
+      background-image: url(../assets/destination/background-destination-tablet.jpg);
+      padding: 20px;
+   }
+ 
+   /* other part of the code */
+   .img-container img{
+      width: 450px;
+      height: 450px;
+
+   }
+   .top-text{
+      text-align: left;
+      margin-left: 30px;
+      font-size: 2rem;
+      font-weight: 300;
+   }
+   .planet-name-heading{
+      font-size: 6rem;
+   }
+   .planet-discription{
+      padding: 20px;
+   }
+   .more-info{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+   }
+
+}
+@media (min-width:769px){
+   body{
+      background-image: url(../assets/destination/background-destination-desktop.jpg);
+   }
+  
+   /* other part of the code */
+   .img-text-conterner{
+      display: flex;
+      justify-content: center;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      /* border: 2px solid blue; */
+   }
+   .flex-text-container{
+      /* border: 2px solid green; */
+      width: 50%;
+   }
+   .img-container{
+      margin-left: 60px;
+      /* width: 50%; */
+   }
+   .img-container img{
+      width: 500px;
+      height: 500px;
+   }
+   .more-info{
+      width: 80%;
+   }
+   hr{
+      margin-top: 30px;
+   }
+}

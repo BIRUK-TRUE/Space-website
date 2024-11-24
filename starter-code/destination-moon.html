@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="./css/destination.css" />
+    <link rel="stylesheet" href="./css/nav-bar.css" />
+  </head>
+  <body>
+    <!-- container for the logo and  navigation -->
+    <header class="navigation-logo-container">
+      <img src="./assets/shared/logo.svg" class="logo" alt="" />
+      <div class="horizontal-line"></div>
+      <img
+        src="./assets/shared/icon-hamburger.svg"
+        alt=""
+        class="open-menu"
+        id="js-open-menu"
+      />
+      <!-- TODO add menu button -->
+      <nav class="links-container active-nav" id="js-nav-container">
+        <img
+          src="./assets/shared/icon-close.svg"
+          alt=""
+          class="close-menu"
+          id="js-close-menu"
+        />
+        <ul class="link-list-container">
+          <li class="link-nav"><a href="./index.html"> Home</a></li>
+          <li class="link-nav">
+            <a href="./destination-moon.html"> Destination</a>
+          </li>
+          <li class="link-nav"><a href="./crew-commander.html">Crew</a></li>
+          <li class="link-nav">
+            <a href="./technology-capsule.html"> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- the rest code -->
+    <section class="main-content-container">
+      <p class="top-text">
+        <span class="gray-color">01</span> Pick your destination
+      </p>
+
+      <div class="img-text-conterner">
+        <div class="img-container">
+          <img
+            src="./assets/destination/image-moon.png"
+            alt=""
+            class="planet-img"
+            id="planet-img"
+          />
+        </div>
+        <div class="flex-text-container">
+          <div class="planet-list-contener">
+            <ul class="planet-list">
+              <li class="planet-name active-link"><span>Moon</span></li>
+              <li class="planet-name"><span>Mars</span></li>
+              <li class="planet-name"><span>Europa</span></li>
+              <li class="planet-name"><span>Titan</span></li>
+            </ul>
+          </div>
+          <div class="text-content">
+            <h1 class="planet-name-heading" id="js-planet-name">MOON</h1>
+            <p class="planet-discription" id="js-discription">
+              See our planet as you’ve never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you’re there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+            <hr />
+          </div>
+
+          <div class="more-info">
+            <div class="distance-info">
+              <p class="text-info">Avg. distance</p>
+              <div class="number-info" id="js-distance">384,400km</div>
+            </div>
+            <div class="time-info">
+              <p class="text-info">Est. travel time</p>
+              <div class="number-info" id="js-time">3 days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script/nav.js"></script>
+    <script type="module" src="./script/destination.js"></script>
+  </body>
+</html>
