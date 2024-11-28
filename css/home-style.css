@@ -66,7 +66,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-top: 60px;
+   margin-top: 50px;
    
 }
 .shadow-box{
@@ -80,13 +80,13 @@ body{
    
 }
 .circl-link-box{
-   width: 200px;
-   height: 200px;
+   width: 170px;
+   height: 170px;
    background-color: white;
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 2rem;
+   font-size: 1.5rem;
    border-radius: 50%;
    cursor: pointer;
 }
@@ -97,8 +97,8 @@ body{
    font-family: var(--secend-font);
 }
 .circl-link-box:hover + .shadow-box{
-width: 300px;
-height: 300px;
+width: 270px;
+height: 270px;
 }
 @media(min-width:577px){
    body{
