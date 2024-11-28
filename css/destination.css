@@ -88,12 +88,12 @@ transition: width 0.5s;
 }
 .planet-discription{
    /* border: 2px solid red; */
-   width: 70%;
+   width: 100%;
    margin: 0 auto;
    text-align: center;
    line-height: 30px;
    color: var(--secend-color);
-   font-size: 1.2rem;
+   font-size: 1rem;
 }
 
 .text-info{
